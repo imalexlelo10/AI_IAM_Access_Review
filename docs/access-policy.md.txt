@@ -1,0 +1,24 @@
+# LeloTech Access Policy
+
+## Purpose
+
+This policy defines the standard security group membership employees should receive based on their job role. The goal is to follow role-based access control (RBAC) and the principle of least privilege.
+
+## Approved Role-Based Access
+
+| Job Role | Approved Security Group |
+|---|---|
+| IT Support Specialist | GG_IT_Support |
+| HR Specialist | GG_HR_Specialists |
+| HR Lead | GG_HR_Specialists |
+| Financial Analyst | GG_Finance_Analysts |
+
+## Access Rules
+
+Employees should only be assigned to security groups that are approved for their job role.
+
+Any security group membership that does not match the approved role-based access policy should be flagged for review.
+
+A flagged membership does not automatically mean the access is malicious or unauthorized. Legitimate business exceptions may exist and should be reviewed before access is removed.
+
+Access changes should require human review before remediation is performed.

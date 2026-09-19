@@ -1,0 +1,10 @@
+employee_id,name,department,job_role,security_groups,account_status,employment_status
+1001,Jordan Smith,IT,IT Support Specialist,GG_IT_Support,Active,Active
+1002,Maya Johnson,Human Resources,HR Specialist,GG_HR_Specialists,Disabled,On Leave
+1003,Daniel Carter,Finance,Financial Analyst,GG_Finance_Analysts,Active,Terminated
+1004,Jacob Hart,IT,IT Support Specialist,GG_IT_Support,Active,Active
+1005,Sheryl Brown,Human Resources,HR Lead,GG_Finance_Analysts,Active,Active
+1006,Caleb Foster,Finance,IT Support Specialist,GG_Finance_Analysts,Active,Active
+1007,Lucas Cage,IT,IT Support Specialist,GG_HR_Specialists,Active,Active
+1008,Kim Car,Finance,Financial Analyst,GG_Finance_Analysts,Active,Active
+1009,Marcus Lee,Marketing,Marketing Specialist,GG_Marketing,Active,Active
