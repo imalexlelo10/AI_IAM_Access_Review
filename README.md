@@ -148,6 +148,69 @@ The analyzer evaluates each finding and provides:
 
 [INSERT SCREENSHOT HERE]
 
+## Results / Demonstration
+
+The completed access review analyzes employee identity data against approved role-based access policies and account lifecycle conditions.
+
+### Audit Results
+
+The current test dataset produced:
+
+- 3 access violations
+- 1 unknown role
+- 1 account violation
+- 1 account requiring review
+- 6 total findings
+
+The audit separates role-based access issues from account lifecycle issues, allowing an employee to pass an RBAC check while still being flagged for an account-status risk.
+
+### Access Review Output
+
+![Access Review Results](screenshots/access_review_results1.png)
+
+![Access Review Results](screenshots/access_review_results2.png)
+
+### Risk Analysis Output
+
+Each finding is passed to the risk analyzer, which provides a risk level, investigation guidance, and a recommended action for administrator review.
+
+![Risk Analyzer Results](screenshots/ai.analyzer_results_1.png)
+
+![Risk Analyzer Results](screenshots/ai_analyzer_results2.png)
+
+### Human Review
+
+The tool does not automatically modify employee accounts, security groups, or permissions. Findings are intended to support administrator investigation and human decision-making before remediation.
+
+## Complete Program Output
+
+The screenshots below demonstrate the complete end-to-end execution of the IAM Access Review tool. The program reads employee identity data, performs role-based access and account lifecycle checks, generates structured findings, and passes those findings to the risk analyzer for further review.
+
+### Full Access Review and Analysis
+
+#### Output 1
+![Complete Program Output 1](screenshots/output1.png)
+
+#### Output 2
+![Complete Program Output 2](screenshots/output2.png)
+
+#### Output 3
+![Complete Program Output 3](screenshots/output3.png)
+
+#### Output 4
+![Complete Program Output 4](screenshots/output4.png)
+
+The completed workflow demonstrates:
+
+- Employee access validation using RBAC policies
+- Account lifecycle checks for active, terminated, and on-leave employees
+- Detection of access violations and undefined role policies
+- Structured findings passed between Python modules
+- Risk-level classification
+- Investigation guidance
+- Recommended remediation actions
+- Human review before access changes are made
+
 ## What I Learned
 
 Building this project helped me better understand both Python programming and Identity and Access Management concepts. One of the biggest programming lessons I learned was the importance of proper indentation. During development, incorrect indentation caused some of my account lifecycle checks to execute incorrectly, which helped me understand how indentation determines the scope and execution flow of Python code.
