@@ -128,21 +128,25 @@ AI-IAM-Access-Review/
 
 Separating the audit engine from the AI analysis component keeps each part of the application focused on a specific responsibility. The Python audit engine determines what conditions were detected based on defined rules, while the AI component will provide additional context and analysis of those findings.
 
-## Future Development
+## Results / Demonstration
 
-The next phase of this project will integrate an AI analysis component that evaluates the structured findings produced by the rules-based IAM audit engine.
+The access review analyzes employee identity data against approved
+role-based access policies and account lifecycle conditions.
 
-The AI component is planned to:
+### Audit Results
+- 3 access violations identified
+- 1 terminated employee with an active account identified
+- 1 account requiring review identified
+- 1 employee with an undefined role policy identified
+- 6 total findings sent to the risk analyzer
 
-* Explain why a detected IAM finding may represent a security or access-management risk.
-* Recommend what an IAM administrator should investigate based on the available evidence.
-* Provide contextual feedback for access violations, account lifecycle issues, unknown roles, and accounts requiring review.
-* Suggest possible remediation steps while keeping the final decision with the administrator.
-* Convert technical findings into clearer information that can support security auditing and access reviews.
+### Risk Analysis
+The analyzer evaluates each finding and provides:
+- Risk level
+- Investigation guidance
+- Recommended remediation action
 
-The AI component will not automatically modify employee accounts, security groups, or permissions. Its purpose is to assist the administrator with understanding and investigating findings before any access changes are made.
-
-A future reporting component will organize the audit findings and AI-generated analysis into a readable access review report.
+[INSERT SCREENSHOT HERE]
 
 ## What I Learned
 
